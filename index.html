@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="shortcut icon" href="curr.jpg">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
+<link rel="stylesheet" href="https://bootswatch.com/4/minty/bootstrap.min.css">
+
+ <title>Currency Exchange</title>
+</head>
+<body onload="convertCurrency();" style="background-image:url(ston.jpg);">
+    <div class="container">
+        <div class="row">
+            <div class="card p-3 mt-5 mx-auto">
+                <div class="card-body">
+                    <h2 class="text-center mb-5 text-dark">Currency Converter</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" id="source-text" class="form-control" placeholder="Enter Amount" onkeyup="convertCurrency();">
+                            </div>
+                        </div>
+                      
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <select name="destination" id="destination" class="form-control" onchange="convertCurrency();" >
+                                    <option value="">Select Destination Currency</option>
+                                    <option value="ARS">Argentina Peso</option>
+                                    <option value="AUD">Australia Dollar</option>
+                                    <option value="BRL">Brazil Real</option>
+                                    <option value="CAD">Canada Dollar</option>
+                                    <option value="CLP">Chile Peso</option>
+                                    <option value="CNY">China Yuan Renminbi</option>
+                                    <option value="CZK">Czech Republic Koruna</option>
+                                    <option value="DKK">Denmark Krone</option>
+                                    <option value="EUR">Euro Member Countries</option>
+                                    <option value="FJD">Fiji Dollar</option>
+                                    <option value="HKD">Hong Kong Dollar</option>
+                                    <option value="HUF">Hungary Forint</option>
+                                    <option value="ISK">Iceland Krona</option>
+                                    <option value="INR">India Rupee</option>
+                                    <option value="IDR">Indonesia Rupiah</option>
+                                    <option value="ILS">Israel Shekel</option>
+                                    <option value="JPY">Japan Yen</option>
+                                    <option value="KRW">Korea (South) Won</option>
+                                    <option value="MYR">Malaysia Ringgit</option>
+                                    <option value="MXN">Mexico Peso</option>
+                                    <option value="NZD">New Zealand Dollar</option>
+                                    <option value="NOK">Norway Krone</option>
+                                    <option value="PKR">Pakistan Rupee</option>
+                                    <option value="PHP">Philippines Peso</option>
+                                    <option value="PLN">Poland Zloty</option>
+                                    <option value="RUB">Russia Ruble</option>
+                                    <option value="SGD">Singapore Dollar</option>
+                                    <option value="ZAR">South Africa Rand</option>
+                                    <option value="SEK">Sweden Krona</option>
+                                    <option value="CHF">Switzerland Franc</option>
+                                    <option value="TWD">Taiwan New Dollar</option>
+                                    <option value="THB">Thailand Baht</option>
+                                    <option value="TRY">Turkey Lira</option>
+                                    <option value="GBP">United Kingdom Pound</option>
+                                    <option value="USD">United States Dollar</option>
+                                </select>
+                            </div>
+                        </div>
+                       
+                        <div class="col-md-6" id="finalresultdiv">
+                            <div class="form-group">
+                                    <h4>Converted Amount : </h4>
+                                <input type="text" id="destination-text" class="form-control" placeholder="Converted Amount is" disabled>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js"></script>
+<script src="harshit.js"></script>
+</body>
+</html>
